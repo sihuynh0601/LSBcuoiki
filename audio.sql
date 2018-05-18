@@ -130,9 +130,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `password`, `permission`) VALUES
-('a', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
-('b', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
-('c', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
+('abcdef', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
+('bacdef', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
+('cabdef', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
 ('huynhtiensi', '8693545b2b0eca500f0ee2b930716305162eb133', 'admin'),
 ('sihuynh0601', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
 ('tester4', '8693545b2b0eca500f0ee2b930716305162eb133', 'user');
