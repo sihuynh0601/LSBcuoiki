@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2018 at 06:35 PM
+-- Generation Time: May 18, 2018 at 06:42 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.0.26
 
@@ -51,6 +51,7 @@ INSERT INTO `multimedia` (`id`, `parentid`, `song`, `singer`, `url`, `type`, `ow
 ('1oKQvvmuoefSc7b0rRY7_Ci4InB8ZVwOu', '1oKQvvmuoefSc7b0rRY7_Ci4InB8ZVwOu', 'Ai khổ vì ai', 'Hương Lan', 'https://drive.google.com/file/d/1oKQvvmuoefSc7b0rRY7_Ci4InB8ZVwOu/view?usp=sharing', 'music', 'huynhtiensi'),
 ('1pkI2mjODbrIse8fISuaQYmnGza7OrwzN', '1pkI2mjODbrIse8fISuaQYmnGza7OrwzN', 'Cùng Anh', 'Ngọc Doli', 'https://drive.google.com/file/d/1pkI2mjODbrIse8fISuaQYmnGza7OrwzN/view?usp=sharing', 'music', 'huynhtiensi'),
 ('1QpQbbqi4i48SQ0hZDGD2Vr1SvcnpvZ9I', '1QpQbbqi4i48SQ0hZDGD2Vr1SvcnpvZ9I', 'Du mục', 'Khánh Ly', 'https://drive.google.com/file/d/1QpQbbqi4i48SQ0hZDGD2Vr1SvcnpvZ9I/view?usp=sharing', 'music', 'huynhtiensi'),
+('1XD18eut4-IZnlVQDu8CMH-GD8D5TtIUY', '1XD18eut4-IZnlVQDu8CMH-GD8D5TtIUY', 'Bùa Yêu', 'Bích Phương', 'https://drive.google.com/file/d/1XD18eut4-IZnlVQDu8CMH-GD8D5TtIUY/view?usp=sharing', 'music', 'huynhtiensi'),
 ('1XLT34twmIcwdh2ei0m6GcOgTqHVxz9OI', '1QpQbbqi4i48SQ0hZDGD2Vr1SvcnpvZ9I', 'Du mục', 'Khánh Ly', 'https://drive.google.com/file/d/1XLT34twmIcwdh2ei0m6GcOgTqHVxz9OI/view?usp=sharing', 'music', 'sihuynh0601'),
 ('1ynXmoqmCj0OJjtPWNS0mR6jX9PFvdjlh', '1ynXmoqmCj0OJjtPWNS0mR6jX9PFvdjlh', 'Gia tài của mẹ', 'Khánh Ly', 'https://drive.google.com/file/d/1ynXmoqmCj0OJjtPWNS0mR6jX9PFvdjlh/view?usp=sharing', 'music', 'huynhtiensi'),
 ('1zTtrb5Frx-6RihbSBzlIe0kBXQidd4yQ', '1zTtrb5Frx-6RihbSBzlIe0kBXQidd4yQ', 'Túy Âm', 'Masew ft. Nhật Nguyễn ft. Xesi', 'https://drive.google.com/file/d/1zTtrb5Frx-6RihbSBzlIe0kBXQidd4yQ/view?usp=sharing', 'music', 'huynhtiensi'),
