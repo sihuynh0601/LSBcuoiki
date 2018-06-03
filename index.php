@@ -3,7 +3,6 @@ error_reporting(E_ERROR)
 ?>
 <!DOCTYPE html>
 <html>
-
 	<?php
 		ini_set('max_execution_time', 180);
 		ini_set('memory_limit', '-1');
@@ -14,7 +13,6 @@ error_reporting(E_ERROR)
 
 		class WavFile{
 			private static $HEADER_LENGTH = 44;
-
 			public static function ReadFile($filename) {
 	            $filesize = filesize($filename);
 	            if ($filesize<self::$HEADER_LENGTH)
@@ -110,9 +108,7 @@ error_reporting(E_ERROR)
 			}
 		}
 
-		$qr = $conn->prepare("select siteinfo.companyname as companyname, siteinfo.slogan as slogan, siteinfo.seokeywords as seokeywords, siteinfo.seodescription as seodescription, siteinfo.facebook as facebook, multimedia.url as logo, siteinfo.copyright as copyright, siteinfo.copyright_ln2 as copyright_ln2 from siteinfo, multimedia where siteinfo.logo = multimedia.id limit 1;");
-		$qr->execute();
-		$rs_siteinfo = $qr->fetch();
+		
 
 		$qr = $conn->prepare("select id, song, singer from multimedia where type = 'music' and owner = 'huynhtiensi';");
 		$qr->execute();
@@ -185,9 +181,8 @@ error_reporting(E_ERROR)
 	?>
 	<head>
 		
-		<link href="<?php echo ($rs_siteinfo['logo']); ?>" type="image/png" rel="shortcut icon" />
-		<meta name="keywords" content="<?php echo ($rs_siteinfo['seokeywords']); ?>" />
-		<meta name="description" content="<?php echo ($rs_siteinfo['seodescription']); ?>" />
+		<link href="" type="image/png" rel="shortcut icon" />
+		
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -197,7 +192,7 @@ error_reporting(E_ERROR)
 		<script type="text/javascript" src="soundmanager2/soundmanager2.js"></script>
 		<script type="text/javascript" src="soundmanager2/script/bar-ui.js"></script>
 		<link rel="stylesheet" href="soundmanager2/css/bar-ui.css">
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Oregano:400|Open+Sans:400|Roboto+Condensed:400,600,700" rel="stylesheet">
 		
 		
@@ -265,12 +260,12 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 		      	<ul class="nav mainbar-list wow fadeInDown" data-wow-duration="0.5s">
 		        	<li id="buy-more-song" class="active">
 		          		<a class="highlight" href="#buymoresong" title="Buy more songs">
-		            		<i class="fa fa-shopping-cart"></i> Mua nhạc
+		            		<i class="fa fa-shopping-cart"></i> Mua Nhạc
 		          		</a>
 		       		</li>
 		       		<li id="get-signature">
 		          		<a href="#getsignature" title="Get signature">
-		            		<i class="fa fa-certificate"></i> Xem chữ kí
+		            		<i class="fa fa-certificate"></i> Xem sở hữu
 		          		</a>
 		       		</li>
 		       		<?php
@@ -278,7 +273,7 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 		       				if ($rs_mypermission['permission'] == "admin"){
 					       		echo "<li id=\"upload-new-song\">
 					          		<a href=\"#uploadnewsong\" title=\"Upload new song\">
-					            		<i class=\"fa fa-upload\"></i> Upload new song
+					            		<i class=\"fa fa-upload\"></i> Tải nhạc mới lên
 					          		</a>
 					       		</li>";
 				       		}
@@ -293,8 +288,8 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 				<thead>
 					<tr>
 						<th class="col-xs-1">#</th>
-						<th class="col-xs-5">Song</th>
-						<th class="col-xs-4">Singer</th>
+						<th class="col-xs-5">Bài hát</th>
+						<th class="col-xs-4">Ca sĩ</th>
 						<th class="col-xs-2">Status/Action</th>
 					</tr>
 				</thead>
@@ -316,11 +311,11 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 									echo "<button id=\"" . $value['id'] . "\" class=\"btn btn-danger btn-mini btnbuysong\"><i class=\"fa fa-shopping-cart\"></i></button>";
 								}
 								else{
-									echo "Licenced";
+									echo "Đã mua";
 								}
 							}
 							else{
-								echo "Please login";
+								echo "Đăng nhập";
 							}
 							echo "	</td>
 								</tr>";
@@ -435,12 +430,12 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
  			</div>
 		</div>
 
-
+        
+            
             <div class="gop-y"><a target="_blank" href="https://www.facebook.com/si.huynh.5"><img title="Mọi ý kiến của bạn sẽ được trả lời qua facebook" src="image/giaodien/gopy0000.jpg" border="0"></a><!--form qua form góp ý(cái này chưa làm)-->
             </div>
-     
+        
 	  	
-		
 	</body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

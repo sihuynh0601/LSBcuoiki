@@ -13,22 +13,27 @@
       $_SESSION['guesttoken'] = bin2hex(random_bytes(16));
     }
     include "connectdb.php";
-    $qr = $conn->prepare("select siteinfo.companyname as companyname, siteinfo.slogan as slogan, siteinfo.seokeywords as seokeywords, siteinfo.seodescription as seodescription, multimedia.url as logo from siteinfo, multimedia where siteinfo.logo = multimedia.id limit 1;");
-    $qr->execute();
-    $rs_siteinfo = $qr->fetch();
+    
   }
 ?>
 
 <head>
-  <title><?php echo ($rs_siteinfo['companyname']) . " | " . ($rs_siteinfo['slogan']); ?></title>
-  <link href="<?php echo ($rs_siteinfo['logo']); ?>" type="image/png" rel="shortcut icon" />
-  <meta name="keywords" content="<?php echo ($rs_siteinfo['seokeywords']); ?>" />
-  <meta name="description" content="<?php echo ($rs_siteinfo['seodescription']); ?>" />
+  
+  <link href="" type="image/png" rel="shortcut icon" />
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <script language="JavaScript"> <!--title chạy-->
+	var txt="Nghe Nhạc Online - Huỳnh Tiến Sĩ         ";
+	var espera=160; var refresco=null; function rotulo_title()
+	{
+		document.title=txt; txt=txt.substring(1,txt.length)+txt.charAt(0); refresco=setTimeout("rotulo_title()",espera);
+	}
+	rotulo_title();
+</SCRIPT>
   <style>
 	body { font-family: 'Open Sans', sans-serif;}
 	html,body{ height: 100%;}
