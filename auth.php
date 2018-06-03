@@ -35,7 +35,7 @@
 			if ($qr->rowCount() === 0){
 				$qr = $conn->prepare("insert into user (id, password, permission) values (:id, :pw, 'user');");
 				$qr->bindParam(":id", $id, PDO::PARAM_STR);
-				$qr->bindParam(":pw", sha1($pw), PDO::PARAM_STR);
+				$qr->bindParam(":pw", ($pw), PDO::PARAM_STR);
 				$qr->execute();
 				echo "signup success";
 			}

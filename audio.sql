@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2018 at 04:36 PM
+-- Generation Time: Jun 03, 2018 at 07:33 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.0.26
 
@@ -112,7 +112,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `password`, `permission`) VALUES
 ('abcdef', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
-('huynhtiensi', '8693545b2b0eca500f0ee2b930716305162eb133', 'admin'),
+('huynhtiensi', '22421452', 'admin'),
+('qwerty', '123456789', 'user'),
 ('sihuynh0601', '8693545b2b0eca500f0ee2b930716305162eb133', 'user'),
 ('tester4', '8693545b2b0eca500f0ee2b930716305162eb133', 'user');
 

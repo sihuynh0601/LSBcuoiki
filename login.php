@@ -225,7 +225,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-	(function() {
+	(function() {/*
 	  'use strict';
 
 	  var root = typeof window === 'object' ? window : {};
@@ -585,7 +585,7 @@
 	        return exports;
 	      });
 	    }
-	  }
+	  }*/
 	})();
 
 	$("#login-id").focus(function(){
@@ -614,7 +614,7 @@
 	    $.ajax({
 	      url: "auth.php",
 	      method: "post",
-	      data: { loginbtn : "true", guesttoken : guesttoken, loginid : id, loginpw : sha1(pw)},
+	      data: { loginbtn : "true", guesttoken : guesttoken, loginid : id, loginpw :(pw)},
 	      success : function(response){
 	        if (response == "login success"){
 	          window.location="index.php";
