@@ -184,7 +184,7 @@ error_reporting(E_ERROR)
 		}
 	?>
 	<head>
-		<title><?php echo ($rs_siteinfo['companyname']) . " | " . ($rs_siteinfo['slogan']); ?></title>
+		
 		<link href="<?php echo ($rs_siteinfo['logo']); ?>" type="image/png" rel="shortcut icon" />
 		<meta name="keywords" content="<?php echo ($rs_siteinfo['seokeywords']); ?>" />
 		<meta name="description" content="<?php echo ($rs_siteinfo['seodescription']); ?>" />
@@ -199,8 +199,49 @@ error_reporting(E_ERROR)
 		<link rel="stylesheet" href="soundmanager2/css/bar-ui.css">
 		<link rel="stylesheet" href="style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Oregano:400|Open+Sans:400|Roboto+Condensed:400,600,700" rel="stylesheet">
+		
+		//sủa thử
+		<script language="JavaScript"> <!--title chạy-->
+	var txt="Nghe Nhạc Online - Huỳnh Tiến Sĩ         ";
+	var espera=160; var refresco=null; function rotulo_title()
+	{
+		document.title=txt; txt=txt.substring(1,txt.length)+txt.charAt(0); refresco=setTimeout("rotulo_title()",espera);
+	}
+	rotulo_title();
+</SCRIPT>
+	<!--CSS-->
+
+<link rel="shortcut icon" href="image/giaodien/favicon1.ico" type="image/x-icon" />
+<link href="css/styles00.css" rel="stylesheet" type="text/css">
+<link href="css/skin0000.css" rel="stylesheet" type="text/css">
+<link href="css/jquery00.css" rel="stylesheet" type="text/css">
+<link href="css/menudrop.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/btup.css" rel="stylesheet" type="text/css">
+<!--Javascrip-->
+<script type="text/javascript" src="js/ichphien.js"></script>
+<script type="text/javascript" src="js/dropmenu.js"></script>
+<script type="text/javascript" src="js/jquery01.js"></script>
+<script type="text/javascript" src="js/ajax_loa.js"></script>
+<script type="text/javascript" src="js/jquery-s.js"></script>
+<script type="text/javascript" src="js/snowstorm.js"></script>
+<script type="text/javascript">
+snowStorm.snowColor = 'blue'; // màu của tuyết - ở đây là màu xanh xám #fff
+snowStorm.flakesMaxActive = 1000000;  // số lượng tuyết rơi cùng 1 lúc
+snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
+</script>	
+		
+		
+		
 	</head>
 	<body>
+	
+	
+	
+	
+	
+	
+	
 		<section class="navbar">
 		    <div class="container">
 				<div class="navbar-header">
