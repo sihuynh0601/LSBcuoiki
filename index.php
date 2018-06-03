@@ -192,7 +192,7 @@ error_reporting(E_ERROR)
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="animate.css" />
+		<link rel="stylesheet" href="css/animate.css" />
 
 		<script type="text/javascript" src="soundmanager2/soundmanager2.js"></script>
 		<script type="text/javascript" src="soundmanager2/script/bar-ui.js"></script>
@@ -200,7 +200,7 @@ error_reporting(E_ERROR)
 		<link rel="stylesheet" href="style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Oregano:400|Open+Sans:400|Roboto+Condensed:400,600,700" rel="stylesheet">
 		
-		//sủa thử
+		
 		<script language="JavaScript"> <!--title chạy-->
 	var txt="Nghe Nhạc Online - Huỳnh Tiến Sĩ         ";
 	var espera=160; var refresco=null; function rotulo_title()
@@ -236,17 +236,17 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 	</head>
 	<body>
 	
-	
-	
-	
-	
-	
-	
+		
 		<section class="navbar">
 		    <div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand navbar-brand-image" href="/" title="<?php echo ($rs_siteinfo['companyname']); ?>"><?php echo ($rs_siteinfo['companyname']); ?></a>
+					<a class="navbar-brand navbar-brand-image" href="/" title= style="width: 145px; height: 37px; display: block;" href="index.php">
+                	<img src="image/giaodien/header.png" width="145" height="40"><!--form logo-->
+               </a>
 				</div>
+				<div class="tcenter">
+				<?php include("form/seach.php"); ?><!--form seach-->
+			</div>
 				<?php
 					if (isset($_SESSION['user'])){
 						echo "<a id=\"goto-login\" href=\"logout.php\" title=\"Sign out\"><img src=\"picture/goto-login.png\"/></a>";
@@ -257,6 +257,7 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 					}
 				?>
 		    </div>
+			
 		</section>
 
 		<section class="mainbar">
@@ -264,12 +265,12 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
 		      	<ul class="nav mainbar-list wow fadeInDown" data-wow-duration="0.5s">
 		        	<li id="buy-more-song" class="active">
 		          		<a class="highlight" href="#buymoresong" title="Buy more songs">
-		            		<i class="fa fa-shopping-cart"></i> Buy more songs
+		            		<i class="fa fa-shopping-cart"></i> Mua nhạc
 		          		</a>
 		       		</li>
 		       		<li id="get-signature">
 		          		<a href="#getsignature" title="Get signature">
-		            		<i class="fa fa-certificate"></i> Get signature
+		            		<i class="fa fa-certificate"></i> Xem chữ kí
 		          		</a>
 		       		</li>
 		       		<?php
@@ -434,9 +435,12 @@ snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
  			</div>
 		</div>
 
-	  	<div class="social-bar">
-		    <a target="_blank" href="<?php echo ($rs_siteinfo['facebook']); ?>" title="Visit my Facebook" class="social-bar-facebook"><i class="fa fa-facebook"></i></a>
-	  	</div>
+
+            <div class="gop-y"><a target="_blank" href="https://www.facebook.com/si.huynh.5"><img title="Mọi ý kiến của bạn sẽ được trả lời qua facebook" src="image/giaodien/gopy0000.jpg" border="0"></a><!--form qua form góp ý(cái này chưa làm)-->
+            </div>
+     
+	  	
+		
 	</body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -1305,7 +1305,7 @@ background: url(bg/icon-800.png) left -660px no-repeat;
 .gop-y { position: fixed; z-index:9999999; right:0px; bottom: 400px; }
 /*-- style cho header search--*/
 .search_new{
-	padding: 3px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 }
 
 .search_new_mid{
